@@ -3,10 +3,15 @@ PREGUNTAS FRECUENTES EN ENTREVISTAS DE FRONT END EN REACT Y REDUX:
 
 1. Diferencia entre ForEach y Map en Javascript:
 
-ForEach: No devuelve nada sino que cambia los valores del array original mediante callback function.
+Array.forEach: Devuelve undefined, modifica los elementos de un array mutando los mismos a través de la función que
+recibe como argumento, la cual funciona como un callback que es ejecutado una vez por cada elemento. Se suele
+utilizar por requerimiento de librerías o para evitar ocupar memoria con un nuevo array. No se usa en
+programación funcional por realizar mutaciones.
 
-Map: Devuelve un nuevo array con los resultados de la callback function.
-
+Array.map: Devuelve un nuevo array con la misma cantidad de elementos que el array original, la función que recibe
+como argumento funciona similar a la del forEach, con la diferencia que no muta el array original y el callback debe
+retornar el nuevo valor. Suele ser utilizado cuando crear un nuevo array en la memoria no es un problema. Se utiliza
+en programación funcional.
 -------------------------------------------------------------------------------------------------------------
 
 2. High Order Component:
